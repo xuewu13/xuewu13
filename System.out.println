@@ -1,0 +1,19 @@
+public class StaticBlockTest1 {
+
+    {
+        System.out.println("StaticBlockTest1 not static block");
+    }
+    static {
+        System.out.println("StaticBlockTest1 static block");
+    }
+
+    public StaticBlockTest1(){
+        System.out.println("constructor StaticBlockTest1");
+    }
+
+    public static void main(String[] args) {
+        Children children = new Children();
+        children.getValue();
+    }
+
+}
